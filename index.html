@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+</head>
+<body>
+    <header>
+        <h1>Employment Application</h1>
+        <p>Fill the form below accurately indicating your potentials and suitability to job applying for: </p>
+    </header>
+    <main>
+        <form action="submit.html"  method="post">
+        <section id="Applicant details">
+            <fieldset>
+                <legend><h2>Basic Details</h2></legend>
+                <h5>Name</h5>
+            <label for="firstName" >First Name</label>
+            <input type="text" name="firstName" id="firstName"  required>
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" required>
+            <h5>Date of Birth: </h5>
+            <label for="month">Month</label>
+            <select name="month" id="month" placeholder required>
+            <option value="">Select an option</option>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+            </select>
+                <label for="day">Day</label>
+            <select name="Day" id="day">
+                <option value="">Select a day</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>          
+            </select>
+            <label for="year">Year</label>
+            <input type="number" min="1950" max="2027" step="1" value="2000" id="year" >
+            <label for="phoneNumber"><h5>Phone Number</h5></label>
+            <input type="tel" id="phoneNumber" placeholder="000-000-0000">
+            <label for="email"><h5>E-Mail</h5></label>
+            <input type="email" id="email" placeholder="someone@example.com">
+            <h5>Address</h5>
+            <input type="text" size="165px" id="streetAddress">
+            <label for="streetAddress"><br>Street Address</label>
+            <br><br>
+            <input type="text" size="165px" id="streetAddress2">
+            <label for="streetAddress2"><br>Street Address Line 2</label>
+            <br><br>
+            <input type="text" size="165px" id="city">
+            <label for="city"><br>City</label>
+            <br><br><br>
+            <label for="State"><b>State</b></label>
+            <br>
+            <select name="state" id="State">
+                <option value="">Select a State</option>
+                <option value="Ap">Andhra Pradesh</option>
+                <option value="AR">Arunachal Pradesh</option>
+                <option value="AS">Assam</option>
+                <option value="BR">Bihar</option>
+                <option value="CG">Chattisgarh</option>
+                <option value="GA">Goa</option>
+                <option value="TG">Telangana</option>
+                <option value="HR">Haryana</option>
+                <option value="PB">Punjab</option>
+                <option value="OD">Odisha</option>
+                <option value="TN">Tamil Nadu</option>
+                <option value="KR">Kerela</option>
+                <option value="WB">West Bengal</option>
+                <option value="JK">Jharkhand</option>
+                <option value="MN">Manipur</option>
+                <option value="MH">Maharastra</option>
+                <option value="MP">Madhya Pradesh</option>
+                <option value="ML">Meghalaya</option>
+                <option value="MZ">Mizoram</option>
+                <option value="RJ">Rajasthan</option>
+                <option value="UK">UttarKhand</option>
+                <option value="SK">Sikkim</option>
+                <option value="WB">West Bengal</option>
+                <option value="KA">Karnataka</option>
+                <option value="NL">Nagaland</option>
+                <option value="JK">Jammu And Kashmir</option>
+                <option value="HP">Himachal Pradesh</option>
+                <option value="TR">Tripura</option>
+            </select>
+            <br><br><br>
+            <input type="text" size="165px" id="pinCode">
+            <label for="pinCode"><br>Pin Code</label>
+            </fieldset>
+            </section>
+            <section id="refferalsway">
+            <fieldset>
+            <legend><h2>Documents and FeedBack Questions</h2></legend>
+            <h5>How were you referred to Us?</h5>
+            <input type="checkbox" name="walk" id="w">
+            <label for="w">Walk-in </label>
+            <input type="checkbox" name="Newspaper" id="NA">
+            <label for="NA">Newspaper Ad <br></label>
+            <input type="checkbox" name="x" id="x">
+            <label for="x">Twitter </label>
+            <input type="checkbox" name="fb" id="fb">
+            <label for="fb">Facebook <br></label>
+            <input type="checkbox" name="lk" id="lk">
+            <label for="lk">LinkedIn </label>
+            <input type="checkbox" name="ref" id="ref">
+            <label for="ref">Referral </label>
+            <section id="ApplicantDocandfeedback">
+            <h5>Resume and Files</h5>
+            <input type="file">
+            <h5>Motivation letter</h5>
+            <textarea name="letter" id="letter" rows="4" cols="150"></textarea>
+            </fieldset>
+            </section>
+            <section id="reference Details">
+            <fieldset>
+                <legend><h2>Refferals Details</h2></legend>
+                <p>please fill two references that are familiar with your work life.</p>
+            <h5>Reference-I</h5>
+            <label for="name1">Name : </label>
+            <input type="text" size="160px" id="name1">
+            <br><br>
+            <label for="title">Title : </label>
+            <input type="text" size="161px" id="title">
+            <br><br>
+            <label for="rel">Relationship : </label>
+            <input type="text" size="153px" id="rel">
+            <br><br>
+            <label for="Email">Email : </label>
+            <input type="email" size="159px" placeholder="someone@example.com" id="Email">
+            <br><br>
+            <label for="Ph">Phone Number : </label>
+            <input type="tel" name="Phone" id="Ph" size="160px">
+            <br><br><br>
+            <h5>Reference-II</h5>
+            <label for="name2">Name : </label>
+            <input type="text" size="160px" name="name" id="name2">
+            <br><br>
+            <label for="title">Title : </label>
+            <input type="text" size="161px" name="title" id="title">
+            <br><br>
+            <label for="rel2">Relationship : </label>
+            <input type="text" size="153px" name="rel" id="rel2">
+            <br><br>
+            <label for="Email2">Email : </label>
+            <input type="email" size="159px" name="email" id="Email2" placeholder="someone@example.com">
+            <br><br>
+            <label for="Ph2">Phone Number : </label>
+            <input type="tel" size="160px" name="phone" id="Ph2">
+            <br><br><br>
+            </fieldset>
+            </section>
+            <br><br><br>
+            <button type="submit">Submit </button>
+            <button type="reset">Reset</button>
+            </form>
+        </main>
+        <footer>
+            <hr>
+            &copy;Hari Charan
+        </footer>
+    </body>
+    </html>
